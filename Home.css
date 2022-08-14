@@ -1,0 +1,345 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #000000;
+    font-family: 'Play', sans-serif;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+}
+.logo img{
+    width: 70px;
+
+    border: 3px purple ;
+    border-radius: 100px;
+}
+.NavBar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+   cursor: pointer;
+
+
+}
+
+.NavList{
+    width: 70%;
+    margin-top: 15px;
+   padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-right: 50%;
+
+}
+.NavList h1{
+    color: white;
+    font-family: 'Play', sans-serif;
+    margin-top: 20px;
+}
+.NavList h1:hover{
+    color:violet;
+}
+.RightNav{
+    width: 70%;
+
+    display: flex;
+    justify-content: center;
+}
+.RightNav li{
+    list-style:none ;
+    padding: 26px 30px;
+
+}
+.RightNav li a{
+text-decoration: none ;
+color: white;
+font-size: 20px;
+font-family: 'Play', sans-serif;
+
+}
+.RightNav li a:hover{
+    text-decoration: none ;
+    color:violet;
+}
+.sec1{
+    height: 100vh;
+
+}
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Play', sans-serif;
+    margin: auto;
+    height: 75%;
+
+    max-width: 98%;
+
+}
+.FirstHalf{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+    font-family: 'Play', sans-serif;
+    padding-top: 5%;
+
+}
+.SecondHalf{
+    width: 40%;
+    margin-right: 50px;
+
+}
+.SecondHalf img{
+    width: 100%;
+    
+}
+.text-big{
+    font-size: 45px;
+    text-align: left;
+
+    padding-left: 15%;
+    padding-right: 40%;
+}
+.text-small{
+    font-size: 22px;
+    text-align: left;
+    padding-top: 5%;
+    padding-left: 15%;
+    padding-right: 40%;
+
+}
+.btn{
+    width: 35%;
+    height: 40px;
+    margin-left: 16%;
+    margin-top: 5%;
+    font-size: 22px;
+    color: #000000;
+    background-color: #03FDFD;
+    filter: drop-shadow(0px 4px 4px #03FDFD );
+    border: 1px solid black;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: white;
+    color: purple;
+    filter: drop-shadow(0px 4px 4px white );
+    border: 1px solid purple;
+}
+
+/* feature page css */
+.sec2{
+    height: 100vh;
+
+}
+.SecondBoxMain{
+display: flex;
+justify-content: center;
+align-items: center;
+color: white;
+font-family: 'Play', sans-serif;
+margin: auto;
+height: 40%;
+max-width: 98%;
+}
+.SHalf{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+    font-family: 'Play', sans-serif;
+    padding-bottom:5% ;
+    text-align: left;
+    margin-left: 10%;
+
+}
+.FHalf{
+    width: 50%;
+    margin-right: 50px;
+}
+.FHalf img{
+    width: 80%;
+    justify-content: right;
+    margin-left:20% ;
+}
+.TBig{
+    font-size: 45px;
+
+
+    padding-left: 15%;
+    padding-right: 40%;
+    padding-top: 20%;
+}
+.FDescription{
+width: 60%;
+padding-inline: 10%;
+font-size: large;
+padding-block: 8%;
+line-height: 40px;
+}
+.btn2{
+    width: 55%;
+    height: 40px;
+
+    margin-top: 5%;
+    font-size: 22px;
+    color: #000000;
+    background-color: #03FDFD;
+    filter: drop-shadow(0px 4px 4px #03FDFD );
+    border: 1px solid black;
+    border-radius: 20px;
+    cursor: pointer;
+
+}
+.btn2:hover{
+    background-color: white;
+    color: purple;
+    filter: drop-shadow(0px 4px 4px white );
+    border: 1px solid purple;
+}
+bo {
+    margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  /*background: #000000;*/
+  justify-content: flex-end;
+  align-items: flex-end;
+  min-height: 10vh;
+}
+.footer {
+  position: relative;
+  width: 100%;
+  background: #3586ff;
+  min-height: 100px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.social-icon,
+.menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+.social-icon__item,
+.menu__item {
+  list-style: none;
+}
+.social-icon__link {
+  font-size: 2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+.social-icon__link:hover {
+  transform: translateY(-10px);
+}
+
+.menu__link {
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+  text-decoration: none;
+  opacity: 0.75;
+  font-weight: 300;
+}
+
+.menu__link:hover {
+  opacity: 1;
+}
+
+.footer p {
+  color: #fff;
+  margin: 15px 0 10px 0;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.wave {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url("https://i.ibb.co/wQZVxxk/wave.png");
+  background-size: 1000px 100px;
+}
+
+.wave#wave1 {
+  z-index: 1000;
+  opacity: 1;
+  bottom: 0;
+  animation: animateWaves 4s linear infinite;
+}
+.wave#wave2 {
+  z-index: 999;
+  opacity: 0.5;
+  bottom: 10px;
+  animation: animate 4s linear infinite !important;
+}
+
+.wave#wave3 {
+  z-index: 1000;
+  opacity: 0.2;
+  bottom: 15px;
+  animation: animateWaves 3s linear infinite;
+}
+
+.wave#wave4 {
+  z-index: 999;
+  opacity: 0.7;
+  bottom: 20px;
+  animation: animate 3s linear infinite;
+}
+
+@keyframes animateWaves {
+  0% {
+    background-position-x: 1000px;
+  }
+  100% {
+    background-positon-x: 0px;
+  }
+}
+
+@keyframes animate {
+  0% {
+    background-position-x: -1000px;
+  }
+  100% {
+    background-positon-x: 0px;
+  }
+}
