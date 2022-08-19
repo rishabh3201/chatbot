@@ -31,42 +31,39 @@
         <input id="textInput" type="text" name="msg" placeholder=" Message" ><input id="buttonInput" type="submit" value="Send" >
       </div>
 
+
+
+
+      <script src="responses.js"></script>
     <script>
-      function getBotResponse() {
-var rawText = $("#textInput").val();
-var userHtml = '<p class="userText"><span>' + rawText + '</span></p>';
-$("#textInput").val("");
-$("#chatbox").append(userHtml);
-document.getElementById('userInput').scrollIntoView({block: 'start', behavior: 'smooth'});
-$.get("/get", { msg: rawText }).done(function(data) {
-var botHtml = '<p class="botText"><span>' + data + '</span></p>';
-$("#chatbox").append(botHtml);
-document.getElementById('userInput').scrollIntoView({block: 'start', behavior: 'smooth'});
-});
-}
-$("#textInput").keypress(function(e) {
-if(e.which == 13) {
-getBotResponse();
-}
-});
-$("#buttonInput").click(function() {
-getBotResponse();
-})
+        function getHardResponse(userText){
+          let botResponse=getBotResponse(userText);
+          let bothtml='<p class="botText"><span>' + botResponse + '</span></p>';
+          $("#chatbox").append(bothtml);
+          document.getElementById('userInput').scrollIntoView({block: 'start', behavior: 'smooth'});
+        }
+       
+        function getResponse(){
+        let userText = $("#textInput").val();
+        let userHtml = '<p class="userText"><span>' + userText + '</span></p>';
+        $("#textInput").val("");
+        $("#chatbox").append(userHtml);
+        document.getElementById('userInput').scrollIntoView({block: 'start', behavior: 'smooth'});
+        getHardResponse(userText);
+        }
+        
+        $("#textInput").keypress(function(e) {
+        if(e.which == 13) {
+        getResponse();
+        }
+        });
+        $("#buttonInput").click(function() {
+        getResponse();
+        });
     </script>
-    </div>
-
-
-
-
+                 </div>
                 </div>
-
-
             </div>
         </section>
-        
-
-
-
-
   </body>
 </html>
