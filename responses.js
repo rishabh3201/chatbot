@@ -2,6 +2,9 @@ function getBotResponse(input){
 	if(input=="what is your name" || input=="who are you"){
 		return "My name is Stark";
 	}
+	else if(input=="hello"|| input=="hi"|| input=="what's up" ||input=="hey"|| input=="whats up"){
+		return "Hello! How can I help you?";
+	}
 	else if(input=="are you a robot" || input=="Are you a robot"){
 		return "Yes, I am a robot";
 	}
